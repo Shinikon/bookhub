@@ -61,10 +61,10 @@ export const Library = () => {
             className="border rounded p-1"
           >
             <option value="all">Все</option>
-            <option value="planned">📌 В планах</option>
-            <option value="reading">📖 Читаю</option>
-            <option value="read">✅ Прочитано</option>
-            <option value="abandoned">❌ Брошено</option>
+            <option value="planned">В планах</option>
+            <option value="reading">Читаю</option>
+            <option value="read">Прочитано</option>
+            <option value="abandoned">Брошено</option>
           </select>
         </div>
 
@@ -120,10 +120,10 @@ export const Library = () => {
                             : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
                         }`}
                       >
-                        {status === 'planned' && '📌 В планах'}
-                        {status === 'reading' && '📖 Читаю'}
-                        {status === 'read' && '✅ Прочитано'}
-                        {status === 'abandoned' && '❌ Брошено'}
+                        {status === 'planned' && 'В планах'}
+                        {status === 'reading' && 'Читаю'}
+                        {status === 'read' && 'Прочитано'}
+                        {status === 'abandoned' && 'Брошено'}
                       </button>
                     ))}
                   </div>
@@ -151,7 +151,7 @@ export const Library = () => {
                         : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
                     }`}
                   >
-                    {book.isFavorite ? '❤️ Любимая' : '🤍 В избранное'}
+                    {book.isFavorite ? 'Любимая' : 'В избранное'}
                   </button>
                 </div>
 
