@@ -36,7 +36,7 @@ export const PublicProfile = () => {
                 <h3 className="font-bold text-sm line-clamp-1">{book.title}</h3>
                 <p className="text-xs text-gray-600">by {book.author}</p>
                 {book.userRating !== undefined && (
-                  <p className="text-yellow-500 text-xs mt-1">{book.userRating}</p>
+                  <p className="text-yellow-500 text-xs mt-1">⭐ {book.userRating}</p>
                 )}
               </div>
             </div>
