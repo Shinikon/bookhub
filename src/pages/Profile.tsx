@@ -77,31 +77,31 @@ export const Profile = () => {
           onClick={() => setActiveTab('read')}
           className={`px-3 py-1 rounded-t ${activeTab === 'read' ? 'bg-white border-t border-l border-r font-medium' : 'text-gray-500 hover:text-gray-700'}`}
         >
-          ✅ Прочитано
+          Прочитано
         </button>
         <button
           onClick={() => setActiveTab('reading')}
           className={`px-3 py-1 rounded-t ${activeTab === 'reading' ? 'bg-white border-t border-l border-r font-medium' : 'text-gray-500 hover:text-gray-700'}`}
         >
-          📖 Читаю
+          Читаю
         </button>
         <button
           onClick={() => setActiveTab('planned')}
           className={`px-3 py-1 rounded-t ${activeTab === 'planned' ? 'bg-white border-t border-l border-r font-medium' : 'text-gray-500 hover:text-gray-700'}`}
         >
-          📌 В планах
+          В планах
         </button>
         <button
           onClick={() => setActiveTab('abandoned')}
           className={`px-3 py-1 rounded-t ${activeTab === 'abandoned' ? 'bg-white border-t border-l border-r font-medium' : 'text-gray-500 hover:text-gray-700'}`}
         >
-          ❌ Брошено
+          Брошено
         </button>
         <button
           onClick={() => setActiveTab('favorites')}
           className={`px-3 py-1 rounded-t ${activeTab === 'favorites' ? 'bg-white border-t border-l border-r font-medium' : 'text-gray-500 hover:text-gray-700'}`}
         >
-          ❤️ Любимые
+          Любимые
         </button>
       </div>
 
@@ -145,9 +145,9 @@ export const Profile = () => {
                       book.status === 'planned' ? 'bg-blue-100 text-blue-800' :
                       'bg-red-100 text-red-800'
                     }`}>
-                      {book.status === 'read' ? '✅ Прочитано' :
-                       book.status === 'reading' ? '📖 Читаю' :
-                       book.status === 'planned' ? '📌 В планах' : '❌ Брошено'}
+                      {book.status === 'read' ? 'Прочитано' :
+                       book.status === 'reading' ? 'Читаю' :
+                       book.status === 'planned' ? 'В планах' : 'Брошено'}
                     </span>
                   </div>
 
@@ -165,7 +165,7 @@ export const Profile = () => {
 
                   {book.isFavorite && (
                     <div className="mt-1">
-                      <span className="text-pink-500 text-xs">❤️ Любимая</span>
+                      <span className="text-pink-500 text-xs">Любимая</span>
                     </div>
                   )}
                 </div>
